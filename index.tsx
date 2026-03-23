@@ -7,7 +7,7 @@ import { createRoot } from 'react-dom/client';
 
 const CONTRACT_ADDRESS = 'BF5ZHcVKUnHNLLtjTYdUnbUsvWLfUa9f11nE9iqSbonk';
 const PUMP_URL = `https://pump.fun/coin/${CONTRACT_ADDRESS}`;
-const DEX_URL = `https://dexscreener.com/solana/${CONTRACT_ADDRESS}`;
+const BONK_URL = `https://www.bonk.fun/token/${CONTRACT_ADDRESS}`;
 
 const ORANGE = '#FF6600';
 const ORANGE_LIGHT = '#FF8C42';
@@ -306,7 +306,7 @@ function Hero() {
           Buy on Pump.fun
         </a>
         <a
-          href={DEX_URL}
+          href={BONK_URL}
           target="_blank"
           rel="noopener noreferrer"
           style={{
@@ -321,7 +321,7 @@ function Hero() {
             letterSpacing: '0.5px',
             backdropFilter: 'blur(8px)',
           }}>
-          DexScreener
+          Buy on Bonk
         </a>
       </div>
 
@@ -664,7 +664,7 @@ function Footer() {
         </div>
         <div style={{ display: 'flex', gap: 24, fontSize: 14, flexWrap: 'wrap', justifyContent: 'center' }}>
           <a href={PUMP_URL} target="_blank" rel="noopener noreferrer" style={{ color: 'rgba(255,255,255,0.4)', textDecoration: 'none' }}>Pump.fun</a>
-          <a href={DEX_URL} target="_blank" rel="noopener noreferrer" style={{ color: 'rgba(255,255,255,0.4)', textDecoration: 'none' }}>DexScreener</a>
+          <a href={BONK_URL} target="_blank" rel="noopener noreferrer" style={{ color: 'rgba(255,255,255,0.4)', textDecoration: 'none' }}>Buy on Bonk</a>
         </div>
         <p style={{ fontSize: 13, color: 'rgba(255,255,255,0.25)', fontStyle: 'italic', maxWidth: 400 }}>
           "Not financial advice. I'm a cat." — Rigby
