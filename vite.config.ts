@@ -6,4 +6,7 @@ export default defineConfig({
   optimizeDeps: {
     include: ['react', 'react-dom'],
   },
+  preview: {
+    allowedHosts: 'all',
+  },
 });
