@@ -6,7 +6,7 @@ import { createRoot } from 'react-dom/client';
    ───────────────────────────────────────────── */
 
 const CONTRACT_ADDRESS = 'BF5ZHcVKUnHNLLtjTYdUnbUsvWLfUa9f11nE9iqSbonk';
-const PUMP_URL = `https://pump.fun/coin/${CONTRACT_ADDRESS}`;
+const DEX_URL = `https://dexscreener.com/solana/${CONTRACT_ADDRESS}`;
 const BONK_URL = `https://www.bonk.fun/token/${CONTRACT_ADDRESS}`;
 
 const ORANGE = '#FF6600';
@@ -95,7 +95,7 @@ function Nav() {
         <a href="#gallery" style={linkStyle}>Gallery</a>
         <a href="#tokenomics" style={linkStyle}>Tokenomics</a>
         <a
-          href={PUMP_URL}
+          href={DEX_URL}
           target="_blank"
           rel="noopener noreferrer"
           style={{
@@ -145,7 +145,7 @@ function Nav() {
             </a>
           ))}
           <a
-            href={PUMP_URL} target="_blank" rel="noopener noreferrer"
+            href={DEX_URL} target="_blank" rel="noopener noreferrer"
             onClick={() => setMenuOpen(false)}
             style={{
               padding: '14px 24px',
@@ -289,7 +289,7 @@ function Hero() {
       {/* CTA Buttons */}
       <div style={{ display: 'flex', gap: 16, flexWrap: 'wrap', justifyContent: 'center', marginBottom: 40 }}>
         <a
-          href={PUMP_URL}
+          href={DEX_URL}
           target="_blank"
           rel="noopener noreferrer"
           style={{
@@ -303,7 +303,7 @@ function Hero() {
             boxShadow: `0 0 50px rgba(255,102,0,0.45), inset 0 1px 0 rgba(255,255,255,0.15)`,
             letterSpacing: '0.5px',
           }}>
-          Buy on Pump.fun
+          Buy on DexScreener
         </a>
         <a
           href={BONK_URL}
@@ -621,7 +621,7 @@ function CTABanner() {
       </p>
 
       <a
-        href={PUMP_URL}
+        href={DEX_URL}
         target="_blank"
         rel="noopener noreferrer"
         style={{
@@ -663,7 +663,7 @@ function Footer() {
           RIGBY ($RIGBY)
         </div>
         <div style={{ display: 'flex', gap: 24, fontSize: 14, flexWrap: 'wrap', justifyContent: 'center' }}>
-          <a href={PUMP_URL} target="_blank" rel="noopener noreferrer" style={{ color: 'rgba(255,255,255,0.4)', textDecoration: 'none' }}>Pump.fun</a>
+          <a href={DEX_URL} target="_blank" rel="noopener noreferrer" style={{ color: 'rgba(255,255,255,0.4)', textDecoration: 'none' }}>DexScreener</a>
           <a href={BONK_URL} target="_blank" rel="noopener noreferrer" style={{ color: 'rgba(255,255,255,0.4)', textDecoration: 'none' }}>Buy on Bonk</a>
         </div>
         <p style={{ fontSize: 13, color: 'rgba(255,255,255,0.25)', fontStyle: 'italic', maxWidth: 400 }}>
