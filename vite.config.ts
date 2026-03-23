@@ -7,6 +7,6 @@ export default defineConfig({
     include: ['react', 'react-dom'],
   },
   preview: {
-    allowedHosts: 'all',
+    allowedHosts: true,
   },
 });
